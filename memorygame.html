@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="memorygame.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Memory Card Game</h1>
+    <p>Find all matching cards</p>
+</header>
+
+<main>
+
+    <section class="form-section">
+        <form id="gameForm">
+
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="level">Select Level:</label>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button type="submit">Start Game</button>
+
+        </form>
+    </section>
+
+    <section class="game-info">
+
+        <div>
+            <p>Time</p>
+            <h3 id="time">60</h3>
+        </div>
+
+        <div>
+            <p>Moves</p>
+            <h3 id="moves">0</h3>
+        </div>
+
+        <div>
+            <p>Best Score</p>
+            <h3 id="best">-</h3>
+        </div>
+
+    </section>
+
+    <section>
+        <p id="message">Enter your name and start the game.</p>
+    </section>
+
+    <section id="game" class="game"></section>
+
+    <section class="buttons">
+        <button id="restart">Restart</button>
+    </section>
+
+</main>
+
+<script src="memorygame.js"></script>
+
+</body>
+</html>

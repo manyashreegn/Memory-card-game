@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+header {
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+}
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+form div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #3498db;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+.game-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.game-info div {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.game-info p {
+    margin: 5px;
+}
+
+.game-info h3 {
+    margin: 5px;
+}
+#message {
+    text-align: center;
+    background-color: #e8f4ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.card {
+    height: 120px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: #2c3e50;
+}
+
+.card.show {
+    background-color: white;
+    color: black;
+    border: 2px solid #3498db;
+}
+
+.card.matched {
+    background-color: #2ecc71;
+    color: white;
+}
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#restart {
+    background-color: #e67e22;
+}
+
+#restart:hover {
+    background-color: #d35400;
+}
+
+@media (max-width: 600px) {
+
+    form {
+        display: block;
+    }
+
+    form label {
+        margin-top: 10px;
+    }
+
+    form button {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+    }
+
+    .card {
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .game-info {
+        gap: 5px;
+    }
+}
